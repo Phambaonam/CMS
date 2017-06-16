@@ -1,3 +1,3 @@
 module.exports = {
-  "theme_name": "ACME"
+  "theme_name": "Doremon"
 };

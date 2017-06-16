@@ -1,0 +1,87 @@
+<header class="site-header">
+    <nav class="navbar navbar-default navbar-intimate role="
+         data-offset-top="50" data-spy="affix">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Start Toggle Nav For Mobile -->
+                <button class="navbar-toggle" data-target="#navigation"
+                        data-toggle="collapse" type="button"><span class=
+                                                                   "sr-only">Toggle navigation</span> <span class=
+                                                                                                            "icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html"><i class=
+                                                                 "ico-3dglasses"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Navigation Start -->
+            <div class="navbar-collapse collapse" id="navigation">
+                {{ getSidebar('main-menu') | async | safe }}
+            </div><!-- Navigation End -->
+        </div>
+    </nav><!-- Mobile Menu Start -->
+    <ul class="wpb-mobile-menu">
+        <li class="active">
+            <a href="#">Home</a>
+            <ul>
+                <li>
+                    <a href="fullscreen-slider.html">Home - Fullscreen
+                        Slider</a>
+                </li>
+                <li>
+                    <a href="carousel-slider.html">Home - Post Carousel</a>
+                </li>
+                <li class="active">
+                    <a href="index.html">Home - Default</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Portfolio</a>
+            <ul>
+                <li>
+                    <a href="portfolio-col-3.html">Portfolio 3 column</a>
+                </li>
+                <li>
+                    <a href="portfolio-col-4.html">Portfolio 4 column</a>
+                </li>
+                <li>
+                    <a href="portfolio-item.html">Single Project</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Blog</a>
+            <ul>
+                <li>
+                    <a href="blog.html">Blog View</a>
+                </li>
+                <li>
+                    <a href="single.html">Single Post</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="#">Download</a>
+        </li>
+    </ul><!-- Mobile Menu End -->
+</header>
+<!-- Hero Area Start -->
+<section class="text-center" id="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="intro-area">
+                    <h1>{{ postTitle }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Area End -->

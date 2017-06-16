@@ -14,10 +14,13 @@ module.exports = function (component, application) {
         // Post
         "/blog": {
             get: {
+                // handler: function trong controller để xử lý
                 handler: controller.postList,
                 authenticate: true,
+                // Kiểm tra quyền truy cập của người sử dụng
                 permissions: postPermissions
             },
+            // định nghĩa parameter của hệ thống
             param: {
                 key: "postId",
                 handler: controller.postRead

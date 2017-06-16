@@ -8,14 +8,14 @@ module.exports = {
     db: {
        host: 'localhost',
        port: '5432',
-       database: 'arrowjs',
-       username: 'postgres',
-       password: '123456',
+       database: 'arrow-development',
+       username: 'development',
+       password: 'abc',
        dialect: 'postgres',
        logging: false
     },
-    redis: {
-       host: 'localhost',
-       port: '6379'
-    }
+    // redis: {
+    //    host: 'localhost',
+    //    port: '6379'
+    // }
 };
